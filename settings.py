@@ -2,12 +2,12 @@
 # 1. in TEMPLATE_DIRS
 # 2. through hardcoded URL routes in the file ref'd by ROOT_URLCONF
 
-SERVER_ROOT_DIR = '/web/indivo_ui_server'
-INDIVO_UI_SERVER_BASE = 'http://localhost:80'
+SERVER_ROOT_DIR = '/indivo/indivo_ui_server'
+INDIVO_UI_SERVER_BASE = 'http://localhost5151'
 INDIVO_SERVER_LOCATION = 'http://localhost:8000'
-CONSUMER_KEY='chrome'
-CONSUMER_SECRET='chrome'
-SECRET_KEY = 'REPLACEMENOW'
+CONSUMER_KEY='curatehealth'
+CONSUMER_SECRET='curatehealth'
+SECRET_KEY = 'curatehealth'
 
 # we need to put absolute paths here for the UI server's template AND
 # each app's /jmvc/ directory otherwise the UI server will not load the jmvc
