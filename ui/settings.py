@@ -3,7 +3,7 @@
 # 2. through hardcoded URL routes in the file ref'd by ROOT_URLCONF
 
 SERVER_ROOT_DIR = '/indivo/indivo_ui_server'
-INDIVO_UI_SERVER_BASE = 'http://localhost5151'
+INDIVO_UI_SERVER_BASE = 'http://localhost:5151'
 INDIVO_SERVER_LOCATION = 'http://localhost:8000'
 CONSUMER_KEY='curatehealth'
 CONSUMER_SECRET='curatehealth'
