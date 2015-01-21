@@ -9,7 +9,7 @@
 		{% if branding %}
 			<title>{{ branding.pretty_name_prepend|safe }} {{ branding.pretty_name|safe }}</title>
 		{% else %}
-			<title>{% trans "Indivo&trade;"|safe %}</title>
+			<title>{% trans "myCuratio&trade;"|safe %}</title>
 		{% endif %}
 	</head>
 	<body>
@@ -27,7 +27,7 @@
 						{% if branding %}
 							 {{ branding.pretty_name_prepend|safe }} {{ branding.pretty_name|safe }}
 						{% else %}
-							{% trans "Indivo" %}<span id="header_trademark">&trade;</span>
+							{% trans "myCuratio" %}<span id="header_trademark">&trade;</span>
 						{% endif %}
 					</span>
 					<span id="header_fullname"></span>

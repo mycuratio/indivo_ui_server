@@ -19,7 +19,7 @@
 		{% if branding %}
 			{{ branding.pretty_name_prepend|safe }} {{ branding.pretty_name|safe }}
 		{% else %}
-			{% trans "Indivo&trade;" %}
+			{% trans "myCuratio&trade;" %}
 		{% endif %}
 		{% endblock %}
 		{% block title_suffix %}{% endblock %}
@@ -43,7 +43,7 @@
 					{% if branding %}
 						{{ branding.pretty_name_prepend|safe }} {{ branding.pretty_name|safe }}
 					{% else %}
-						{% trans "Indivo" %}<span id="front_site_trademark">&trade;</span>
+						{% trans "myCuratio" %}<span id="front_site_trademark">&trade;</span>
 					{% endif %}
 				{% endblock %}
 				{% block welcome_suffix %}{% endblock %}
