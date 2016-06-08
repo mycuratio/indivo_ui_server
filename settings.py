@@ -3,8 +3,8 @@
 # 2. through hardcoded URL routes in the file ref'd by ROOT_URLCONF
 
 SERVER_ROOT_DIR = '/indivo/indivo_ui_server'
-INDIVO_UI_SERVER_BASE = 'http://login.mycuratio.com'
-INDIVO_SERVER_LOCATION = 'http://curatehealth.net:8000'
+INDIVO_UI_SERVER_BASE = 'http://chart.mycuratio.com'
+INDIVO_SERVER_LOCATION = 'http://chart.mycuratio.com:8000'
 CONSUMER_KEY='curatehealth'
 CONSUMER_SECRET='curatehealth'
 SECRET_KEY = 'curatehealth'
@@ -34,7 +34,7 @@ ROOT_URLCONF = 'urls'
 
 # allow to signup via web?
 REGISTRATION = {
-	'enable': True,						# True or False
+	'enable':True,						# True or False
 	'set_primary_secret': 1,			# 0 or 1. If 0, administrators will have to approve accounts. If set to 1, make sure the server has SEND_MAIL enabled!
 	'set_secondary_secret': 1,			# 0 or 1. Can only be 1 if primary is also 1
 	'min_password_length': 8,
@@ -85,6 +85,6 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.file'
 SESSION_FILE_PATH = SERVER_ROOT_DIR + "/sessions"
 
 # Use the following when not in development, and adjust accordingly:
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-# ALLOWED_HOSTS = ['www.yoursite.com']
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
+ALLOWED_HOSTS = ['chart.mycuratio.com']
